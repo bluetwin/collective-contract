@@ -1,0 +1,36 @@
+@namespace("Collective")
+
+protocol Location {
+
+  /** The main class for this protocol */
+  record Location {
+   /** The primary key */
+   int id;
+
+   /** The name of the Location */
+   string name;
+
+   /** The id address for this location */
+   int address_id;
+
+   /** The phone number for this location */
+   string phone_number;
+
+   /** The id of the merchant at this location */
+   int merchant_id;
+
+  }
+
+  /** Look at all locations */
+  array<Location> index(Location params);
+
+  /** Look at a specific location by id */
+  array<Location> show(int location_id);
+
+  /** Create a location with params */
+  int create(Location params);
+
+  /** Update a location with params */
+  boolean update(Location params);
+
+}
