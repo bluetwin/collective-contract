@@ -1,6 +1,6 @@
 # Collective::Contract
 
-TODO: Write a gem description
+This is the endpoint definition for the Collective API service
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Install and then utilize against the Collective service to validate definitions
 
 ## Contributing
 
